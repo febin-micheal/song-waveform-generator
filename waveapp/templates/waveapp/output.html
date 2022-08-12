@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% csrf_token %}
+    <img src="{{ wave_file }}">
+    <p><a href="{% url 'home' %}">Return to home</a></p>
+{% endblock %}
